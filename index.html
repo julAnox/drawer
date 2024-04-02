@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Dhurjati&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Dhurjati&family=Gudea:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,23 +17,21 @@
     <title>Drawer</title>
   </head>
   <body>
-    <div class="field" id="field"></div>
+    <canvas class="canvas" id="canvas" width="800" height="600"></canvas>
     <div class="panel" id="panel">
       <div class="first-box">
         <p>Select brush thickness:</p>
-        <button class="low" id="low">-</button>
-        <span id="size">10</span>
-        <button class="high" id="high">+</button>
+        <button id="low">-</button>
+        <span id="size"></span>
+        <button id="high">+</button>
       </div>
       <div class="second-box">
         <p>Select color:</p>
-        <input type="color" id="color" class="color" />
+        <input type="color" id="color" />
       </div>
       <div class="third-box">
         <p>Cleaning up a drawing:</p>
-        <span class="material-symbols-outlined" style="color: white">
-          delete_sweep
-        </span>
+        <span class="material-symbols-outlined" id="clear"> delete_sweep </span>
       </div>
     </div>
     <script src="index.js"></script>
